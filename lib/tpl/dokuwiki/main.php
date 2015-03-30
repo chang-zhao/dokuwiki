@@ -51,7 +51,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
             <div id="dokuwiki__content"><div class="pad group">
                 <?php html_msgarea() ?>
 
-                <div class="pageId"><span><?php echo hsc($ID) ?></span></div>
+                <div class="pageId"><span><?php echo hsc(str_replace(":", "/", $ID)) ?></span></div>
 
                 <div class="page group">
                     <?php tpl_flush() ?>
